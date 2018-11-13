@@ -54,11 +54,11 @@ public class Planet {
     }
 
     public Double getGravity() {
-        return planetAttribute.getGravity();
+        return (Objects.nonNull(planetAttribute) ? planetAttribute.getGravity() : Double.NaN);
     }
 
     public Double getRadius() {
-        return planetAttribute.getRadius();
+        return (Objects.nonNull(planetAttribute) ? planetAttribute.getRadius() : Double.NaN);
     }
 
     public void setPlanetName(String planetName) {
