@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Planets</title>
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<select>
+    <span th:each="planet: ${planets}">
+    <option th:value="${planet.id}">
+        <span th:text="${planet.name}"></span>
+    </option>
+     </span>
+</select>
+
+</body>
+</html>

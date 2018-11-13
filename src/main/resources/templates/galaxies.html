@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Galaxies</title>
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+
+<select>
+    <span th:each="galaxy: ${galaxies}">
+    <option th:value="${galaxy.id}">
+        <span th:text="${galaxy.name}"></span>
+    </option>
+     </span>
+</select>
+</body>
+</html>
