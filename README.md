@@ -16,4 +16,4 @@ Since we will never release this to production we use 'root' and 'admin' as user
 
 ## Authors
 
-* *George Sandu-Grigorescu** - [Kinkey](https://github.com/kinkey)
+* **George Sandu-Grigorescu** - [Kinkey](https://github.com/kinkey)
